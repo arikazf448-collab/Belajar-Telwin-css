@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scarlett~Reveal Your Beauty</title>
+  <link rel="icon" href="scarlett-logo-80.jpg" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+  <header class="flex items-center justify-between px-6 py-4 bg-pink-50 shadow-md">
+    <h1 class="text-2xl font-bold text-gray-800">SCARLETT</h1>
+    <nav class="flex space-x-6">
+      <a href="#" class="text-gray-700 hover:text-pink-500">Produk</a>
+      <a href="#" class="text-gray-700 hover:text-pink-500">Promo</a>
+      <a href="#" class="text-gray-700 hover:text-pink-500">Analisis Kulit</a>
+      <a href="#" class="text-gray-700 hover:text-pink-500">Cek Keaslian</a>
+      <a href="#" class="text-gray-700 hover:text-pink-500">Tentang Kami</a>
+    </nav>
+    <div class="flex items-center space-x-4">
+      <input type="text" placeholder="Cari Produk" class="px-4 py-2 border rounded-lg focus:ring-pink-500 focus:outline-none">
+      <i class="fas fa-user text-gray-700"></i>
+      <i class="fas fa-shopping-cart text-gray-700"></i>
+    </div>
+  </header>
+
+  <main class="text-center py-12">
+    <h2 class="text-4xl font-semibold text-gray-800">Reveal Your Beauty</h2>
+    <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 px-6">
+
+<div class="flex items-center space-x-4">
+    <a href="#" class="hover:text-gray-300"></a>
+    <button class="md:hidden">
+      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div class="swiper my-8">
+    <div class="swiper-wrapper">
+            <section class="relative w-full bg-gradient-to-b from-blue-50 to-purple-50 py-0">
+              <div class="relative max-w-10xl mx-auto">
+                <div id="carousel" class="flex overflow-x-scroll scroll-smooth snap-x snap-mandatory space-x-4">
+                  
+                  <div class="snap-center flex-shrink-0">
+                    <img src="5e7e736e-4052-4801-a3a8-7a58033b6ef2.png" alt="slide 1" class="w-full h-[510px] object-cover ">
+                  </div>
+                  
+                  <div class="snap-center flex-shrink-0">
+                    <img src="9bd10232-17c2-4b43-8a1e-ff009841fb50.png" alt="slide 2" class="w-full h-[510px] object-cover m">
+                  </div>
+                  
+                  <div class="snap-center flex-shrink-0">
+                    <img src="fd9dc346-4d93-4b51-8f24-5bb2d670e82c_BANNER_WEB__ALL_PERFUM_1440x544_2.png" alt="slide 3" class="w-full h-[510px]object-cover mx-auto">
+                  </div>
+          
+             
+                <button id="prevBtn" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white shadow-md p-2 rounded-full hover:bg-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-800">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button id="nextBtn" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white shadow-md p-2 rounded-full hover:bg-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-800">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </section>
+          
+            <script>
+              const carousel = document.getElementById('carousel');
+              const nextBtn = document.getElementById('nextBtn');
+              const prevBtn = document.getElementById('prevBtn');
+          
+              nextBtn.addEventListener('click', () => {
+                carousel.scrollBy({ left: 200, behavior: 'smooth' });
+              });
+          
+              prevBtn.addEventListener('click', () => {
+                carousel.scrollBy({ left: -200, behavior: 'smooth' });
+              });
+            </script>
+          </body>
+        </head>
+        <body class="bg-purple-50 font-sans">
+          <section class="py-10">
+            <div class="text-center">
+              <h1 class="text-3xl font-bold text-gray-800">Produk Terbaru</h1>
+            </div>
+            <div class="flex overflow-x-auto space-x-4 mt-10 px-4">
+              
+              <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk1.png" alt="Produk 1" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">Peeling So Good</h2>
+                  <p class="text-sm text-gray-600">Scarlett Whitening Peeling...</p>
+                  <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+        
+             
+              <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk2.jpg" alt="Produk 2" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">7x Ceramide Barrier Up</h2>
+                  <p class="text-sm text-gray-600">Scarlett Whitening 7x Ceram...</p>
+                  <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+        
+              
+              <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk3.png" alt="Produk 3" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">C-Power Face Mist</h2>
+                  <p class="text-sm text-gray-600">Scarlett Whitening C-Power...</p>
+                  <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+        
+              
+              <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk4.png" alt="Produk 4" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">C-Power Serum</h2>
+                  <p class="text-sm text-gray-600">Scarlett Whitening C-Power...</p>
+                  <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+        
+              
+              <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk5.png" alt="Produk 5" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">Loving Body Cream</h2>
+                  <p class="text-sm text-gray-600">Kulit kering karena cuaca...</p>
+                  <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+
+              
+              <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk 6.png" alt="Produk 6" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">Loving Body Serum</h2>
+                  <p class="text-sm text-gray-600">Ga pede nunjukkin style and...</p>
+                  <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+
+               
+               <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk7.jpg" alt="Produk 7" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">14% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">Loving Body Lotion</h2>
+                  <p class="text-sm text-gray-600">Butuh yang bikin kulit tetap...</p>
+                    <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp64.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+              
+              <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk8.jpg" alt="Produk 8" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">14% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">Loving Body Scrub</h2>
+                  <p class="text-sm text-gray-600">Suka scrubbing kulit m...</p>
+                    <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+              
+              <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk9.jpg" alt="Produk 9" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">Loving Shower Scrub</h2>
+                  <p class="text-sm text-gray-600">Rawat skin barrier dan jaga...</p>
+                    <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+              
+              <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk10.png" alt="Produk 10" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">Sun Bright Daily Sunscreen</h2>
+                  <p class="text-sm text-gray-600">Sunscreen yang membantu untuk...</p>
+                    <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+            </div>
+          </section>
+            <section class="py-10">
+              <div class="text-center">
+                <h1 class="text-3xl font-bold text-gray-800">Produk Terlaris</h1>
+              </div>
+              <div class="flex overflow-x-auto space-x-4 mt-10 px-4">
+                
+                <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                  <img src="Produk 1a.png" alt="Produk 1" class="w-full h-30 object-cover rounded-md">
+                  <div class="mt-4">
+                    <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                    <h2 class="text-lg font-bold mt-2 text-gray-800">Scarlet Whitening Acne Care Facial Wash</h2>
+                    <p class="text-sm text-gray-600">Sering serba salah waktu...</p>
+                    <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                    <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                    <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                  </div>
+                </div>
+          
+                <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                  <img src="Produk1 - Copy.png" alt="Produk 2" class="w-full h-30 object-cover rounded-md">
+                  <div class="mt-4">
+                    <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                    <h2 class="text-lg font-bold mt-2 text-gray-800">Peeling So Good</h2>
+                  <p class="text-sm text-gray-600">Scarlett Whitening Peeling...</p>
+                  <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                  </div>
+                </div>
+          
+
+                <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                  <img src="Produk2 - Copy.jpg" alt="Produk 3" class="w-full h-30 object-cover rounded-md">
+                  <div class="mt-4">
+                    <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                    <h2 class="text-lg font-bold mt-2 text-gray-800">7x Ceramide Barrier Up</h2>
+                  <p class="text-sm text-gray-600">Scarlett Whitening 7x Ceram...</p>
+                  <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                  </div>
+                </div>
+          
+
+                <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                  <img src="Produk 4a.png" alt="Produk 4" class="w-full h-30 object-cover rounded-md">
+                  <div class="mt-4">
+                    <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                    <h2 class="text-lg font-bold mt-2 text-gray-800">Brightly Ever After Serum</h2>
+                    <p class="text-sm text-gray-600">Scarlett Whitening Brightly...</p>
+                    <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                    <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                    <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                  </div>
+                </div>
+          
+                <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                  <img src="Produk5a.png" alt="Produk 5" class="w-full h-30 object-cover rounded-md">
+                  <div class="mt-4">
+                    <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                    <h2 class="text-lg font-bold mt-2 text-gray-800">Acne Serum</h2>
+                    <p class="text-sm text-gray-600">Lelah sama jerawat yang...</p>
+                    <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                    <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                    <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                  </div>
+                </div>
+
+                <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                  <img src="Produk6a.png" alt="Produk 6" class="w-full h-30 object-cover rounded-md">
+                  <div class="mt-4">
+                    <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                    <h2 class="text-lg font-bold mt-2 text-gray-800">Glowthening Serum</h2>
+                    <p class="text-sm text-gray-600">Scarlet Whitening Glowthening...</p>
+                    <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                    <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                    <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                  </div>
+                </div>
+               
+                 <div class="min-w-[250px] bg-white shadow-md rounded-lg p-4">
+                <img src="Produk7a.png" alt="Produk 7" class="w-full h-30 object-cover rounded-md">
+                <div class="mt-4">
+                  <span class="text-xs text-white bg-pink-500 px-2 py-1 rounded">21% OFF</span>
+                  <h2 class="text-lg font-bold mt-2 text-gray-800">Sun Bright Daily Sunscreen</h2>
+                  <p class="text-sm text-gray-600">Sunscreen yang membantu untuk...</p>
+                    <a class="text-blue-500 hover:text-blue-700" href=" ">[Selengkapnya]</a>
+                  <p class="text-pink-500 text-lg font-bold">Rp59.000</p>
+                  <p class="text-gray-400 text-sm line-through">Rp75.000</p>
+                </div>
+              </div>
+              </div>
+            </section>
+        
+            <div class="container mx-auto px-0 py-8">
+                <div class="bg-pink-200 rounded-lg shadow-lg p-6">
+                    <h1 class="text-4xl font-bold text-pink-700 mb-4">Reveal Your Beauty</h1>
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2">
+                            <img src="image.webp" alt="Combo A: Brighten Glow" class="rounded-lg shadow-lg mb-0 md:mb-0" />
+                        </div>
+                        <div class="md:w-1/2 md:pl-6">
+                            <h2 class="text-xl font-semibold text-pink-800 mb-2">SCARLETT</h2>
+                            <p class="text-pink-700 text-justify">
+                                SCARLETT adalah brand kecantikan lokal dengan pertumbuhan tercepat di Indonesia yang didirikan pada 2017 oleh Felicya Angelista. SCARLETT mengeluarkan berbagai jenis produk kecantikan yang berfokus untuk mencerahkan dan menjaga kesehatan kulit, baik untuk tubuh, wajah, maupun rambut. Dengan "Reveal Your Beauty", SCARLETT menjadi solusi yang dapat meningkatkan kepercayaan diri Sahabat Scarlett untuk berani mengungkapkan kecantikan dengan versi masing-masing.
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                </div>
+            </div>
+  <footer class="bg-White-50 py-10">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Informasi</h3>
+          <ul class="text-gray-600 text-left space-y-2">
+            <li><a href="#" class="hover:text-gray-900">RESELLER RESMI SCARLETT</a></li>
+            <li><a href="#" class="hover:text-gray-900">SCARLETT Official Partner Launch</a></li>
+            <li><a href="#" class="hover:text-gray-900">Tentang SCARLETT</a></li>
+            <li><a href="#" class="hover:text-gray-900">Kebijakan Privasi</a></li>
+            <li><a href="#" class="hover:text-gray-900">Syarat & Ketentuan</a></li>
+            <li><a href="#" class="hover:text-gray-900">Cek Keaslian</a></li>
+            <li><a href="#" class="hover:text-gray-900">Gebyar Hadiah</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Metode Pembayaran</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li>
+              <span class="font-medium">Transfer Bank (Virtual Account)</span>
+              <div class="flex flex-wrap items-center mt-2 space-x-2">
+                <img src="Bank-transfer-r.png" alt="Bank-transfer-r" class="h-5">
+              </div>
+            </li>
+            <li>
+              <span class="font-medium">E-Wallet</span>
+              <div class="flex flex-wrap items-center mt-2 space-x-2">
+                <img src="E-wallet.png" alt="E-Wallet" class="h-5">
+              </div>
+            </li>
+            <li>
+              <span class="font-medium">Kartu Kredit</span>
+              <div class="flex flex-wrap items-center mt-2 space-x-2">
+                <img src="Credit-Card-r.png" alt="Credit-Card-r" class="h-5">
+              </div>
+            </li>
+            <li>
+              <span class="font-medium">Minimarket</span>
+              <div class="flex flex-wrap items-center mt-2 space-x-2">
+                <img src="Alfamart-Emblem.png" alt="Alfamart" class="h-6">
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-4">Layanan Pelanggan</h3>
+          <p class="text-gray-600">cs@scarlettwhitening.com</p>
+          <div class="flex items-center justify-between mt-6 space-x-4">
+            <a href="#"><img src="Facebook.png" alt="Facebook" class="h-6"></a>
+            <a href="#"><img src="Instagram.png" alt="Instagram" class="h-5"></a>
+            <a href="#"><img src="tiktok.png" alt="Tiktok" class="h-10"></a>
+            <a href="#"><img src="wa.png" alt="WhatsApp" class="h-6"></a>
+            <a href="#"><img src="email.png" alt="Email" class="h-6"></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 text-center text-gray-500 text-sm py-20">
+        <p>Copyright &copy; 2024 Scarlett Whitening owned by PT Opto Lestari Sejahtera. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
